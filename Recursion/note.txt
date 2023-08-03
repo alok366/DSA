@@ -1,0 +1,10 @@
+void drawInterval(int centralLength)//suppose it's 5
+{
+    if(centralLength>0)
+    {
+        drawInterval(centralLength-1);/*the normal flow would be 5,4,3,2,1,0 and then it would draw 0,1,2,3,4,5
+        but bcoz there's one more drawInterval after drawLine() so the numbers>0 would again create more chains*/
+        drawLine(centralLength);
+        drawInterval(centralLength-1);
+    }
+}

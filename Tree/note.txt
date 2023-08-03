@@ -1,0 +1,2 @@
+simply assigning null to a node doesn't guarantee that it will be deleted by garbage collector it
+does become eligible to be detected by garbage collector tho
